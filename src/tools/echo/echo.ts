@@ -1,5 +1,5 @@
-import type { McpServer } from "@modelcontextprotocol/sdk";
 import { z } from "zod";
+import type { McpServer } from "@modelcontextprotocol/sdk";
 
 export function createEchoTool(server: McpServer) {
   return server.tool(
