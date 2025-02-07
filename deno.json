@@ -5,6 +5,7 @@
   "exports": {
     ".": "./main.ts"
   },
+  "include": ["src/**/*.ts", "main.ts"],
   "nodeModulesDir": "auto",
   "fmt": {
     "lineWidth": 120
@@ -33,7 +34,6 @@
     "express": "npm:express",
     "zod": "npm:zod"
   },
-
   "lint": {
     "rules": {
       "include": ["no-deprecated-deno-api"]
