@@ -1,0 +1,46 @@
+{
+  "name": "@phughesmcr/deno-mcp-server",
+  "version": "0.0.1",
+  "license": "MIT",
+  "exports": {
+    ".": "./main.ts"
+  },
+  "nodeModulesDir": "auto",
+  "fmt": {
+    "lineWidth": 120
+  },
+  "compilerOptions": {
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictBindCallApply": true,
+    "strictBuiltinIteratorReturn": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "verbatimModuleSyntax": true
+  },
+  "imports": {
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk",
+    "express": "npm:express",
+    "zod": "npm:zod"
+  },
+
+  "lint": {
+    "rules": {
+      "include": ["no-deprecated-deno-api"]
+    }
+  },
+  "tasks": {
+    "prep": "deno fmt && deno lint --fix && deno check main.ts",
+    "start": "deno run -A main.ts"
+  }
+}

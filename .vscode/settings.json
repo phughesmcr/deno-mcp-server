@@ -1,0 +1,10 @@
+{
+  "deno.enable": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnType": false,
+  "editor.rulers": [120],
+  "files.autoSaveDelay": 1000,
+  "files.eol": "\n",
+  "typescript.validate.enable": true
+}
